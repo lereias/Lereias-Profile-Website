@@ -227,8 +227,8 @@
 
   box-sizing: content-box;
 
-  width: 7.2rem;
-  height: 7.2rem;
+  width: 5.2rem;
+  height: 5.2rem;
 
   background-color: #222;
   padding: 0.8rem;
@@ -248,8 +248,8 @@
 .pty {
   display: block;
 
-  width: 6.4rem;
-  height: 6.4rem;
+  width: 4.8rem;
+  height: 4.8rem;
 }
 
 /*******************************/
@@ -378,25 +378,25 @@
 
 @keyframes swapSideRight {
   0% {
-    transform: scale(-1, 1);
+    transform: rotateY(180deg);
   }
   50% {
-    transform: scale(1, 1);
+    transform: rotateY(0);
   }
   100% {
-    transform: scale(-1, 1);
+    transform: rotateY(180deg);
   }
 }
 
 @keyframes swapSideLeft {
   0% {
-    transform: scale(1, 1);
+    transform: rotateY(0);
   }
   50% {
-    transform: scale(-1, 1);
+    transform: rotateY(180deg);
   }
   100% {
-    transform: scale(1, 1);
+    transform: rotateY(0);
   }
 }
 

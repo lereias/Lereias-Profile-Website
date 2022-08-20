@@ -358,7 +358,7 @@
     transform: translate(-25%, 100%);
   }
   100% {
-    transform: translate(-75%, 100%);
+    transform: translate(-75.25%, 100%);
   }
 }
 
@@ -372,7 +372,7 @@
     transform: translate(-75%, 205%);
   }
   100% {
-    transform: translate(-25%, 205%);
+    transform: translate(-24.75%, 205%);
   }
 }
 
@@ -386,12 +386,8 @@
     transform: translate(-25%, 310%);
   }
   100% {
-    transform: translate(-75%, 310%);
+    transform: translate(-75.25%, 310%);
   }
-}
-
-.delayed {
-  /* animation-delay: 10s; */
 }
 
 .opinion {
@@ -402,4 +398,6 @@
   font-size: 3rem;
 
   border-radius: 9px;
+
+  padding: 2rem;
 }

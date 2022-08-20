@@ -25,13 +25,14 @@
 -- color
 --- main: #dec05e
 ---- tint: 
----- #fcf9ef (hoodie on image, personality logo,
-              poems)
+---- #fcf9ef (hoodie on image, description text,
+              personality logo, poems)
 ---- #ebd99e (links and button hover)
 ---- #e5cd7e (links and button)
 ---- #ebd99e (the background of images, opinion bg)
 ---- shade:
 ---- #b29a4b (title of lereias)
+---- #594d26 (description bg)
 --- grey: 
 --- #444 (button hover)
 --- #383838 (navbar, buttons, leaf, author opinion)

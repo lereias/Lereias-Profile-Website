@@ -64,12 +64,13 @@
   background-color: #222;
 
   position: relative;
-  padding-top: 60rem;
+  padding-top: 12.8rem;
   padding-bottom: 12.8rem;
 }
 
 .content-hero {
   align-items: center;
+  justify-items: center;
 }
 
 .name {
@@ -90,32 +91,26 @@
   margin: 0;
 }
 
-.learn-more {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  font-weight: 600;
+.learn-more .image-icon,
+.btn:link,
+.btn:visited {
+  display: inline-block;
 
-  justify-self: end;
+  text-decoration: none;
+
+  padding: 0;
+  border: none;
+
+  /* width: 35rem;
+  height: 10rem; */
+
+  transition: all 0.3s;
 }
 
 .btn:link,
 .btn:visited {
-  text-decoration: none;
-
-  padding: 0;
   background-color: #383838;
-  border: none;
-
-  width: 35rem;
-  height: 10rem;
-
-  color: #e5cd7e;
-  font-size: 3.6rem;
-  text-transform: uppercase;
-
-  transition: all 0.3s;
+  border-radius: 50%;
 }
 
 .btn:hover,
@@ -123,6 +118,7 @@
   color: #ebd99e;
   background-color: #444;
   text-shadow: 0 0 5px rgba(222, 192, 94, 0.9);
+  box-shadow: 0 0 5px 5px rgba(222, 192, 94, 0.9);
 }
 
 .btn:hover .image-icon {
@@ -133,47 +129,42 @@
   stroke: #ebd99e;
 }
 
-.image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-42%, -43%);
-}
-
 .image-block {
-  content: "";
-  display: block;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -45%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 50%;
   box-shadow: 0 0 15px 5px rgba(235, 217, 158, 0.9);
 
   width: 60rem;
   height: 60rem;
-  background-color: #ebd99e;
+  /* background-color: #ebd99e; */
 
   z-index: 9999;
 }
 
-.image-block::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(15%, -160%);
+/* .image {
+  margin-left: 5rem;
+} */
 
-  content: "A gentle soul that traverses the lands, searching for the new, craving for wonder";
-  font-size: 3.2rem;
+.hero-start-quote {
+  font-weight: 600;
+  font-size: 3rem;
+}
 
-  color: #222;
-  background-color: #dec05e;
-  border-radius: 100px 0 100px 0;
+.description {
+  font-weight: 500;
+  font-size: 2.4rem;
+
+  color: #fcf9ef;
+  background-color: #594d26;
+  border-radius: 0 100px 100px 0;
 
   width: 50rem;
-  padding: 2.4rem 2.4rem 2.4rem 6.4rem;
+  padding: 2.4rem 2.4rem 4.8rem 2.4rem;
+
+  margin-bottom: 6.4rem;
 }
 
 /*******************************/

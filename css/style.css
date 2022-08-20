@@ -391,13 +391,35 @@
 }
 
 .opinion {
+  display: grid;
+  grid-template-columns: 1fr;
   width: 55rem;
   height: 25rem;
 
   background-color: #ebd99e;
-  font-size: 3rem;
-
   border-radius: 9px;
 
   padding: 2rem;
+}
+
+.opinion-start-quote,
+.opinion-quote,
+.author {
+  margin: 0;
+}
+
+.opinion-start-quote {
+  font-size: 4.4rem;
+  font-weight: 700;
+}
+
+.opinion-quote {
+  justify-self: center;
+  font-size: 3.6rem;
+}
+
+.author {
+  justify-self: end;
+  align-self: end;
+  font-size: 3rem;
 }

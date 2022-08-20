@@ -29,12 +29,12 @@
               poems)
 ---- #ebd99e (links and button hover)
 ---- #e5cd7e (links and button)
----- #ebd99e (the background of images)
+---- #ebd99e (the background of images, opinion bg)
 ---- shade:
 ---- #b29a4b (title of lereias)
 --- grey: 
 --- #444 (button hover)
---- #383838 (navbar, buttons, leaf)
+--- #383838 (navbar, buttons, leaf, author opinion)
 --- #222 (default, pants on image, poem writings)
 
 -- images

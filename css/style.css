@@ -421,5 +421,7 @@
 .author {
   justify-self: end;
   align-self: end;
+
+  color: #383838;
   font-size: 3rem;
 }

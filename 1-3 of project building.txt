@@ -1,0 +1,51 @@
+- define:
+-- Profile website (landing page) of Lereias
+-- personal website
+
+- plan:
+-- create a logo
+-- create illustrations
+-- sections (top to bottom)
+--- navbar
+--- hero section
+--- personality profile cards
+--- z-pattern poem section
+--- opinions moving sideways
+--- call-to-action notification emails
+--- footer
+
+- sketch:
+
+- build and design:
+-- typography
+--- Font sizes (px)
+--- 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 /
+    52 / 62 / 74 / 86 / 98
+
+-- color
+--- main: #dec05e
+---- tint: 
+---- #fcf9ef (hoodie on image, personality logo,
+              poems)
+---- #ebd99e (links and button hover)
+---- #e5cd7e (links and button)
+---- #ebd99e (the background of images)
+---- shade:
+---- #b29a4b (title of lereias)
+--- grey: 
+--- #444 (button hover)
+--- #383838 (navbar, buttons, leaf)
+--- #222 (default, pants on image, poem writings)
+
+-- images
+
+-- icons
+
+-- shadows
+
+-- border-radius
+
+-- whitespace
+--- Spacing system (px)
+--- 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 
+    96 / 128

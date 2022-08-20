@@ -1,0 +1,405 @@
+/*******************************/
+/* Navigation Bar */
+/*******************************/
+
+.header {
+  display: grid;
+  align-items: center;
+
+  width: 100%;
+  height: 10rem;
+  background-color: #383838;
+  box-shadow: 0 3px 15px rgba(222, 192, 94, 0.9);
+
+  padding: 0 3.2rem;
+
+  position: absolute;
+  z-index: 9999;
+}
+
+.links {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+
+  margin: 0;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+
+  color: #e5cd7e;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #ebd99e;
+  font-size: 2.2rem;
+  text-shadow: 0 0 5px rgba(222, 192, 94, 0.9);
+}
+
+.links li:nth-child(3) {
+  margin: 0 4.8rem;
+}
+
+.logo {
+  width: 12rem;
+  box-shadow: 0 2px 0 0 rgba(222, 192, 94, 0.9);
+}
+
+/*******************************/
+/* Section Hero */
+/*******************************/
+
+.section-hero {
+  background-color: #222;
+
+  position: relative;
+  padding-top: 60rem;
+  padding-bottom: 12.8rem;
+}
+
+.content-hero {
+  align-items: center;
+}
+
+.name {
+  color: #dec05e;
+  font-size: 6.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+
+  margin: 0;
+}
+
+.title {
+  color: #b29a4b;
+  font-size: 4.4rem;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-weight: 600;
+
+  justify-self: end;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+
+  padding: 0;
+  background-color: #383838;
+  border: none;
+
+  width: 35rem;
+  height: 10rem;
+
+  color: #e5cd7e;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  color: #ebd99e;
+  background-color: #444;
+  text-shadow: 0 0 5px rgba(222, 192, 94, 0.9);
+}
+
+.btn:hover .image-icon {
+  filter: drop-shadow(0 0 5px rgba(222, 192, 94, 0.9));
+}
+
+.btn:hover .image-icon *:not([width="256"]) {
+  stroke: #ebd99e;
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-42%, -43%);
+}
+
+.image-block {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+
+  border-radius: 50%;
+  box-shadow: 0 0 15px 5px rgba(235, 217, 158, 0.9);
+
+  width: 60rem;
+  height: 60rem;
+  background-color: #ebd99e;
+
+  z-index: 9999;
+}
+
+.image-block::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(15%, -160%);
+
+  content: "A gentle soul that traverses the lands, searching for the new, craving for wonder";
+  font-size: 3.2rem;
+
+  color: #222;
+  background-color: #dec05e;
+  border-radius: 100px 0 100px 0;
+
+  width: 50rem;
+  padding: 2.4rem 2.4rem 2.4rem 6.4rem;
+}
+
+/*******************************/
+/* Section Personalities */
+/*******************************/
+
+.section-personalities {
+  background-color: #fcf9ef;
+
+  padding: 12.8rem 0;
+
+  position: relative;
+}
+
+.personality {
+  padding: 2rem;
+}
+
+.card-title {
+  color: #dec05e;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.card-description {
+  color: #b29a4b;
+  font-size: 2.4rem;
+}
+
+.pty {
+  display: block;
+  margin-bottom: 3.6rem;
+  background-color: #222;
+  padding: 0.8rem;
+  border-radius: 50%;
+  width: 6.4rem;
+  height: 6.4rem;
+}
+
+/*******************************/
+/* Section Poems */
+/*******************************/
+
+.content-poems {
+  row-gap: 6.4rem;
+  justify-items: center;
+}
+
+.section-poems {
+  background-color: #ebd99e;
+
+  padding: 12.8rem 0;
+}
+
+.poem-header {
+  justify-self: start;
+
+  color: #222;
+
+  margin-bottom: 0;
+}
+
+.poem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+
+  background-color: #fcf9ef;
+
+  padding: 3.6rem 3.6rem 8.4rem 3.6rem;
+  width: 100%;
+
+  font-size: 2.6rem;
+}
+
+.poem.odd {
+  border-radius: 100px 0 100px 0;
+  box-shadow: 5px 5px 5px 0 rgba(222, 192, 94, 0.5);
+}
+
+.poem.even {
+  border-radius: 0 100px 0 100px;
+  box-shadow: -5px 5px 5px 0 rgba(222, 192, 94, 0.5);
+}
+
+/* .poem.one {
+  width: 65%;
+  height: 85%;
+}
+
+.poem.two {
+  width: 90%;
+  height: 90%;
+}
+
+.poem.three {
+  width: 95%;
+  height: 95%;
+}
+
+.poem.four {
+  width: 100%;
+  height: 100%;
+} */
+
+/* .poem.one .poem-letter {
+  font-size: 1.6rem;
+}
+
+.poem.two .poem-letter {
+  font-size: 2rem;
+}
+
+.poem.three .poem-letter {
+  font-size: 2.4rem;
+}
+
+.poem.four .poem-letter {
+  font-size: 2.8rem;
+} */
+
+.poem.odd .quote {
+  align-self: flex-start;
+  margin-left: 2rem;
+  transform: scale(-1, 1);
+}
+
+.poem.even .quote {
+  align-self: flex-end;
+  margin-right: 2rem;
+}
+
+.leaves {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.leaf {
+  width: 9.2rem;
+  height: 9.2rem;
+}
+
+.leaves.odd .leaf {
+  transform: scale(-1, 1);
+}
+
+/*******************************/
+/* Section Opinions */
+/*******************************/
+
+.section-opinions {
+  background-color: #222;
+
+  padding: 12.8rem 0;
+
+  position: relative;
+
+  height: 150rem;
+}
+
+.row-opinions {
+  display: flex;
+  gap: 2rem;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  overflow: hidden;
+}
+
+.row-opinions.one {
+  /* transform: translate(-25%, 100%); */
+  animation: row-one 15s linear infinite;
+}
+
+@keyframes row-one {
+  0% {
+    transform: translate(-25%, 100%);
+  }
+  100% {
+    transform: translate(-75%, 100%);
+  }
+}
+
+.row-opinions.two {
+  /* transform: translate(-75%, 205%); */
+  animation: row-two 15s linear infinite;
+}
+
+@keyframes row-two {
+  0% {
+    transform: translate(-75%, 205%);
+  }
+  100% {
+    transform: translate(-25%, 205%);
+  }
+}
+
+.row-opinions.three {
+  /* transform: translate(-25%, 310%); */
+  animation: row-three 15s linear infinite;
+}
+
+@keyframes row-three {
+  0% {
+    transform: translate(-25%, 310%);
+  }
+  100% {
+    transform: translate(-75%, 310%);
+  }
+}
+
+.delayed {
+  /* animation-delay: 10s; */
+}
+
+.opinion {
+  width: 55rem;
+  height: 25rem;
+
+  background-color: #ebd99e;
+  font-size: 3rem;
+
+  border-radius: 9px;
+}

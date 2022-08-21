@@ -27,13 +27,18 @@
 ---- tint: 
 ---- #fcf9ef (hoodie on image, description text,
               personality logo, poems)
+---- #f2e6bf (hover social link bg)
+---- #efe0af (social link bg)
 ---- #ebd99e (links and button hover)
 ---- #e5cd7e (links and button)
 ---- #ebd99e (the background of images, opinion bg)
+---- #e1c66e (cta hover)
+
 ---- shade:
----- #b29a4b (title of lereias)
----- #594d26 (description bg)
+---- #b29a4b (title of lereias, explore more text)
+---- #6f602f (description bg)
 --- grey: 
+--- #777 (copyright text)
 --- #444 (button hover)
 --- #383838 (navbar, buttons, leaf, author opinion)
 --- #222 (default, pants on image, poem writings)

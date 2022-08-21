@@ -61,6 +61,14 @@
   margin: 0 4.8rem;
 }
 
+.link-logo {
+  transition: all 0.3s;
+}
+
+.link-logo:focus {
+  filter: drop-shadow(0 0 5px rgba(222, 192, 94, 0.9));
+}
+
 .logo {
   width: 12rem;
   box-shadow: 0 2px 0 0 rgba(222, 192, 94, 0.9);
@@ -457,12 +465,18 @@
   padding: 2.4rem 3.6rem;
 
   margin-top: 6.4rem;
+
+  transition: all 0.3s;
 }
 
 .explore:hover,
 .explore:active,
 .explore:focus {
   background-color: #e1c66e;
+}
+
+.explore:focus {
+  box-shadow: 0 0 0 10px #dec05e;
 }
 
 /*******************************/
@@ -694,8 +708,13 @@
   padding: 3.2rem 0;
 }
 
-.link-footer {
+.link-logo-footer {
   margin-bottom: 2.4rem;
+  transition: all 0.3s;
+}
+
+.link-logo-footer:focus {
+  box-shadow: 0 0 0 5px #dec05e;
 }
 
 .social {
@@ -728,6 +747,10 @@
 .social-link:active,
 .social-link:focus {
   background-color: #f2e6bf;
+}
+
+.social-link:focus {
+  box-shadow: 0 0 0 5px #dec05e;
 }
 
 .social .social-icon {

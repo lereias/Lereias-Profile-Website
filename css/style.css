@@ -54,7 +54,7 @@
 .link:focus {
   color: #ebd99e;
   /* font-size: 2.2rem; */
-  text-shadow: 0 0 5px rgba(222, 192, 94, 0.9);
+  text-shadow: 0 0 3px rgba(222, 192, 94, 0.9);
 }
 
 .links li:nth-child(3) {
@@ -68,7 +68,7 @@
 .link-logo:hover,
 .link-logo:active,
 .link-logo:focus {
-  filter: drop-shadow(0 0 5px rgba(222, 192, 94, 0.9));
+  filter: drop-shadow(0 0 2px rgba(222, 192, 94, 0.9));
 }
 
 .logo {
@@ -253,12 +253,6 @@
   padding: 2rem;
 
   transition: all 0.3s;
-
-  pointer-events: none;
-}
-
-.personality:hover {
-  padding: 2rem 2rem 0 2rem;
 }
 
 .card-title {
@@ -289,12 +283,10 @@
   margin-bottom: 4.8rem;
 
   transition: all 0.3s;
-
-  pointer-events: auto;
 }
 
 .pty-block:hover {
-  padding: 1.2rem;
+  transform: scale(1.2);
 }
 
 .pty {
@@ -466,6 +458,8 @@
   background-color: #dec05e;
   padding: 2.4rem 3.6rem;
 
+  border-radius: 100px;
+
   margin-top: 6.4rem;
 
   transition: all 0.3s;
@@ -636,11 +630,21 @@
   width: 100%;
 }
 
+.input-blocks {
+  background-color: #e5cd7e;
+
+  border-radius: 25px;
+
+  padding: 3.6rem 3rem;
+}
+
 .input-block {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+}
 
+.input-block:not(:last-child) {
   margin-bottom: 2.4rem;
 }
 
@@ -661,7 +665,13 @@
   padding: 1.2rem 2.4rem;
 
   border: none;
-  box-shadow: 5px 5px 10px 0 rgba(235, 217, 158, 0.5);
+  border-radius: 100px;
+
+  transition: all 0.3s;
+}
+
+.input:focus {
+  box-shadow: 5px 5px 5px 0 rgba(222, 192, 94, 0.9);
 }
 
 .embark {

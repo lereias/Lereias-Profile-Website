@@ -23,7 +23,7 @@
     52 / 62 / 74 / 86 / 98
 
 -- color
---- main: #dec05e
+--- main: #dec05e (scrollbar thumb)
 ---- tint: 
 ---- #fcf9ef (hoodie on image, description text,
               personality logo, poems)
@@ -32,7 +32,7 @@
 ---- #ebd99e (links and button hover)
 ---- #e5cd7e (links and button)
 ---- #ebd99e (the background of images, opinion bg)
----- #e1c66e (cta hover)
+---- #e1c66e (cta hover, scrollbar thumb hover)
 
 ---- shade:
 ---- #b29a4b (title of lereias, explore more text)

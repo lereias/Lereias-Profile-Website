@@ -65,6 +65,8 @@
   transition: all 0.3s;
 }
 
+.link-logo:hover,
+.link-logo:active,
 .link-logo:focus {
   filter: drop-shadow(0 0 5px rgba(222, 192, 94, 0.9));
 }

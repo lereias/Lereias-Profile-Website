@@ -68,8 +68,8 @@ queries! Instead, 1rem = 1em = 16px */
     padding: 0;
     padding-top: 175px;
 
-    /* transition: all 0.5s ease-in; */
-    transition: all 0.7s cubic-bezier(0.78, 0.01, 0.25, 0.97);
+    transition: all 0.5s ease-in;
+    /* transition: all 0.7s cubic-bezier(0.78, 0.01, 0.25, 0.97); */
 
     z-index: 1;
 

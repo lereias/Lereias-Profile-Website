@@ -249,7 +249,6 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   color: #222;
-  overflow-x: hidden;
 
   width: 100%;
 }
@@ -288,6 +287,12 @@ body {
 /*******************************/
 /* Reusable Components */
 /*******************************/
+
+.page-container {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
 
 .container {
   width: 125rem;

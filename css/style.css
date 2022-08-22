@@ -88,6 +88,7 @@
 .sticky .header {
   position: fixed;
   top: 0;
+  width: 100%;
   background-color: rgba(56, 56, 56, 0.9);
 }
 

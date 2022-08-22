@@ -16,6 +16,8 @@
 
   position: absolute;
   z-index: 9999;
+
+  transition: all 0.3s;
 }
 
 .nav-bar {
@@ -92,7 +94,7 @@
   top: 0;
   width: 100%;
   background-color: rgba(56, 56, 56, 0.9);
-  /* background-color: #fff; */
+  /* background-color: #383838; */
 }
 
 .sticky .header:before {
@@ -144,6 +146,10 @@
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+
+.nav-bar-open.header {
+  background-color: #383838;
 }
 
 .nav-bar-open .open {

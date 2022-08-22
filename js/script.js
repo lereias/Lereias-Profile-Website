@@ -40,6 +40,7 @@ const sectionHeroEl = document.querySelector(".section-hero");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
+    console.log(ent);
 
     if (!ent.isIntersecting) {
       document.querySelector("body").classList.add("sticky");
@@ -57,7 +58,7 @@ const obs = new IntersectionObserver(
     threshold: 0,
     // from the threshold
     // rem is not working, only px
-    rootMargin: "-90px",
+    rootMargin: "-80px",
   }
 );
 obs.observe(sectionHeroEl);

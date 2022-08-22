@@ -40,6 +40,7 @@ queries! Instead, 1rem = 1em = 16px */
   }
 
   .content-header-sm {
+    grid-row: 1;
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
@@ -48,8 +49,6 @@ queries! Instead, 1rem = 1em = 16px */
   }
 
   .nav-bar {
-    grid-row: 1;
-
     position: absolute;
     top: 0;
     left: 0;

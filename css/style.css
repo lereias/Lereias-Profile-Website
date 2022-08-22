@@ -12,6 +12,8 @@
   /* background-color: #383838; */
   /* box-shadow: 0 3px 15px rgba(222, 192, 94, 0.9); */
 
+  transform-style: preserve-3d;
+
   position: absolute;
   z-index: 9999;
 }
@@ -90,6 +92,7 @@
   top: 0;
   width: 100%;
   background-color: rgba(56, 56, 56, 0.9);
+  /* background-color: #fff; */
 }
 
 .sticky .header:before {
@@ -112,6 +115,8 @@
 
   width: 130rem;
   margin: 0 auto;
+
+  z-index: 999;
 }
 
 .button-menu {
@@ -159,7 +164,7 @@
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
-  transform: translateY(0);
+  transform: translate3d(0, 0, -10px);
 }
 
 /*******************************/

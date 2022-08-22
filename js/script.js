@@ -48,6 +48,7 @@ const obs = new IntersectionObserver(
 
     if (ent.isIntersecting) {
       document.querySelector("body").classList.remove("sticky");
+      document.querySelector(".header").removeAttribute("style");
     }
   },
   {
@@ -70,11 +71,31 @@ const btnMenuCloseEl = document.querySelector(".close");
 const headerEl = document.querySelector(".header");
 
 btnMenuOpenEl.addEventListener("click", (event) => {
-  console.log(event);
   headerEl.classList.add("nav-bar-open");
 });
 
 btnMenuCloseEl.addEventListener("click", (event) => {
-  console.log(event);
   headerEl.classList.remove("nav-bar-open");
+});
+
+//////////////////////////////////////////////////////////
+// Make header solid then have opaque again after menu enter / out
+btnMenuOpenEl.addEventListener("click", (event) => {
+  const menuEl = document.querySelector(".nav-bar");
+  const header2El = document.querySelector(".sticky .header");
+
+  menuEl.addEventListener("transitionend", () => {
+    console.log("yes");
+    header2El.setAttribute("style", "background-color: rgba(56, 56, 56, 0.9);");
+  });
+});
+
+btnMenuCloseEl.addEventListener("click", (event) => {
+  const menu2El = document.querySelector(".nav-bar");
+  const header3El = document.querySelector(".sticky .header");
+
+  menu2El.addEventListener("transitionstart", () => {
+    console.log("yes");
+    header3El.setAttribute("style", "background-color: #383838;");
+  });
 });

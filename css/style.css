@@ -148,7 +148,7 @@
   visibility: hidden;
 }
 
-.nav-bar-open.header {
+.sticky .nav-bar-open.header {
   background-color: #383838;
 }
 

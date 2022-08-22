@@ -7,7 +7,7 @@ yearEl.textContent = currentYear;
 //////////////////////////////////////////////////////////
 // Smooth scrolling animation
 const allLinks = document.querySelectorAll("a:link");
-console.log(allLinks);
+// console.log(allLinks);
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
@@ -26,7 +26,7 @@ allLinks.forEach(function (link) {
     //the exact pixels
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
-      console.log(sectionEl);
+      // console.log(sectionEl);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
   });
@@ -40,7 +40,7 @@ const sectionHeroEl = document.querySelector(".section-hero");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
+    // console.log(ent);
 
     if (!ent.isIntersecting) {
       document.querySelector("body").classList.add("sticky");
@@ -84,9 +84,15 @@ btnMenuOpenEl.addEventListener("click", (event) => {
   const menuEl = document.querySelector(".nav-bar");
   const header2El = document.querySelector(".sticky .header");
 
-  menuEl.addEventListener("transitionend", () => {
-    console.log("yes");
-    header2El.setAttribute("style", "background-color: rgba(56, 56, 56, 0.9);");
+  menuEl.addEventListener("transitionend", (event) => {
+    if (event.propertyName == "opacity") {
+      console.log(event.propertyName);
+      console.log(event.target);
+      header2El.setAttribute(
+        "style",
+        "background-color: rgba(56, 56, 56, 0.9);"
+      );
+    }
   });
 });
 
@@ -94,8 +100,11 @@ btnMenuCloseEl.addEventListener("click", (event) => {
   const menu2El = document.querySelector(".nav-bar");
   const header3El = document.querySelector(".sticky .header");
 
-  menu2El.addEventListener("transitionstart", () => {
-    console.log("yes");
-    header3El.setAttribute("style", "background-color: #383838;");
+  menu2El.addEventListener("transitionstart", (event) => {
+    if (event.propertyName == "opacity") {
+      console.log("start ", event.propertyName);
+      console.log("start ", event.target);
+      header3El.setAttribute("style", "background-color: #383838;");
+    }
   });
 });

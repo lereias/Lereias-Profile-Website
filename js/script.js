@@ -57,7 +57,7 @@ const obs = new IntersectionObserver(
     threshold: 0,
     // from the threshold
     // rem is not working, only px
-    rootMargin: "-100px",
+    rootMargin: "-90px",
   }
 );
 obs.observe(sectionHeroEl);

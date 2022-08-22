@@ -3,10 +3,9 @@
 /*******************************/
 
 .header {
-  display: grid;
   align-items: center;
 
-  width: 100%;
+  width: 100vw;
   height: 10rem;
   /* background-color: #383838; */
   /* box-shadow: 0 3px 15px rgba(222, 192, 94, 0.9); */

@@ -81,6 +81,13 @@ queries! Instead, 1rem = 1em = 16px */
     flex-direction: column;
   }
 
+  .links .for-logo {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
   .link:link,
   .link:visited {
     font-size: 3rem;

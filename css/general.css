@@ -250,6 +250,8 @@ body {
   font-weight: 400;
   color: #222;
   overflow-x: hidden;
+
+  width: 100%;
 }
 
 *:focus {
@@ -339,4 +341,11 @@ body {
 
 .image-icon > *:not([width="256"]) {
   stroke: #e5cd7e;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }

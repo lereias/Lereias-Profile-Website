@@ -5,30 +5,308 @@ queries! Instead, 1rem = 1em = 16px */
 /* BELOW 1344px (Smaller desktops) */
 /**************************************/
 @media (max-width: 84em) {
+  html {
+    font-size: 56.25%;
+  }
 }
 
 /**************************************/
 /* BELOW 1200px (Landscape Tablets) */
 /**************************************/
 @media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+
+  .form-side {
+    width: 90%;
+  }
+
+  .copyright {
+    font-size: 16px;
+  }
+}
+
+/**************************************/
+/* BELOW 1050px (Tablets - Lereias) */
+/**************************************/
+@media (max-width: 66em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .header {
+    height: 12rem;
+  }
+
+  .content-header-sm {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+
+    width: 86.5%;
+  }
+
+  .nav-bar {
+    grid-row: 1;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-100%);
+    /* transform: translateX(100%); */
+
+    background-color: rgba(56, 56, 56, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 0;
+    padding-top: 175px;
+
+    transition: all 0.5s ease-in;
+
+    z-index: 1;
+
+    /* make it invisible */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .link:link,
+  .link:visited {
+    font-size: 3rem;
+  }
+
+  .logo {
+    width: 96px;
+  }
+
+  .content-personalities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .personality-header {
+    justify-self: start;
+  }
+
+  .pty-block {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .pty {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  .card-title {
+    font-size: 4rem;
+  }
+
+  .personality {
+    width: 50rem;
+  }
 }
 
 /**************************************/
 /* BELOW 944px (Tablets) */
 /**************************************/
 @media (max-width: 59em) {
+  .content-header-sm,
+  .container-2 {
+    width: 110rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    width: 100%;
+  }
+
+  .content-hero {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .char-block {
+    align-items: center;
+  }
+
+  .name {
+    font-size: 8rem;
+  }
+
+  .title {
+    font-size: 6rem;
+  }
+
+  .description {
+    border-radius: 100px;
+    font-size: 3rem;
+    width: 80rem;
+
+    padding: 3rem 6.4rem;
+  }
+
+  .image-block {
+    grid-row: 1;
+
+    margin-top: 2rem;
+  }
+
+  .content-wander {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+  }
+
+  .cta-wander {
+    grid-template-columns: 1fr;
+    row-gap: 6.4rem;
+  }
+
+  .form-description {
+    display: inline-block;
+    width: 70%;
+
+    font-size: 3rem;
+  }
+
+  .input-blocks {
+    width: 70%;
+  }
+}
+
+/**************************************/
+/* BELOW 800px (Smaller Tablets) - Lereias */
+/**************************************/
+@media (max-width: 50em) {
+  .content-header-sm,
+  .container-2 {
+    width: 100rem;
+  }
+
+  .content-personalities {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .personality {
+    align-items: center;
+  }
+
+  .card-description {
+    text-align: center;
+  }
+
+  .content-poems {
+    grid-template-columns: 1fr;
+  }
+
+  .poem {
+    width: 70%;
+  }
+
+  .leaves.even {
+    grid-row: 4;
+  }
+
+  .leaves {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 /**************************************/
 /* BELOW 704px (Smaller Tablets) */
 /**************************************/
 @media (max-width: 44em) {
+  .content-header-sm,
+  .container-2 {
+    width: 90rem;
+  }
+}
+
+/**************************************/
+/* BELOW 640px (Phones) - Lereias */
+/**************************************/
+@media (max-width: 40em) {
+  .content-header-sm,
+  .container-2 {
+    width: 80rem;
+  }
+
+  .poem {
+    width: 80%;
+  }
+
+  .form-description {
+    width: 90%;
+  }
+
+  .input-blocks {
+    width: 90%;
+  }
+}
+
+/**************************************/
+/* BELOW 576px (Phones) - Lereias */
+/**************************************/
+@media (max-width: 36em) {
+  .content-header-sm,
+  .container-2 {
+    width: 70rem;
+  }
+
+  .description {
+    width: 90%;
+  }
+
+  .poem {
+    width: 95%;
+  }
 }
 
 /**************************************/
 /* BELOW 544px (Phones) */
 /**************************************/
 @media (max-width: 34em) {
+  .content-header-sm,
+  .container-2 {
+    width: 60rem;
+  }
+
+  .description {
+    font-size: 2.6rem;
+  }
+
+  .poem {
+    width: 100%;
+  }
+
+  .form-description {
+    width: 100%;
+  }
+
+  .input-blocks {
+    width: 100%;
+  }
 }
 /* - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98

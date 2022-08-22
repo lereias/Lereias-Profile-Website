@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lereias - The Wanderer</title>
 
-    <link rel="stylesheet" href="css/queries.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <script defer src="js/script.js"></script>
   </head>
@@ -18,7 +18,7 @@
         <ul class="links">
           <li><a class="link" href="#personalities">My Personality</a></li>
           <li><a class="link" href="#poems">Poems</a></li>
-          <li>
+          <li class="for-logo">
             <a class="link link-logo" href="#">
               <img
                 class="logo"
@@ -31,6 +31,45 @@
           <li><a class="link" href="#wander">Wander With Me</a></li>
         </ul>
       </nav>
+      <div class="content-header-sm hidden">
+        <a class="link link-logo" href="#">
+          <img
+            class="logo"
+            src="images/lereias-logo-3.png"
+            alt="lereias logo"
+          />
+        </a>
+        <button class="button-menu open">
+          <svg
+            class="image-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="192"
+            height="192"
+            fill="#e5cd7e"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <path d="M216,120H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+            <path d="M40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16Z"></path>
+            <path d="M216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+          </svg>
+        </button>
+        <button class="button-menu close">
+          <svg
+            class="image-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="192"
+            height="192"
+            fill="#e5cd7e"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <path
+              d="M139.3,128l66.4-66.3a8.1,8.1,0,0,0-11.4-11.4L128,116.7,61.7,50.3A8.1,8.1,0,0,0,50.3,61.7L116.7,128,50.3,194.3a8.1,8.1,0,0,0,0,11.4,8.2,8.2,0,0,0,11.4,0L128,139.3l66.3,66.4a8.2,8.2,0,0,0,11.4,0,8.1,8.1,0,0,0,0-11.4Z"
+            ></path>
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
       <section class="section-hero">
@@ -2696,7 +2735,7 @@
             <div class="cta-wander grid grid--2-cols">
               <div class="image-block quill">
                 <svg
-                  class="image"
+                  class="image-quill"
                   width="278"
                   height="590"
                   viewBox="0 0 278 590"

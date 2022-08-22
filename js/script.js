@@ -61,3 +61,19 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHeroEl);
+
+//////////////////////////////////////////////////////////
+// Mobile Navigation
+const btnMenuOpenEl = document.querySelector(".open");
+const btnMenuCloseEl = document.querySelector(".close");
+const headerEl = document.querySelector(".header");
+
+btnMenuOpenEl.addEventListener("click", (event) => {
+  console.log(event);
+  headerEl.classList.add("nav-bar-open");
+});
+
+btnMenuCloseEl.addEventListener("click", (event) => {
+  console.log(event);
+  headerEl.classList.remove("nav-bar-open");
+});

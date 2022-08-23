@@ -97,7 +97,7 @@
   /* background-color: #383838; */
 }
 
-.sticky .header:before {
+/* .sticky .header::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -107,7 +107,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-}
+} */
 
 /* MOBILE */
 .content-header-sm {
@@ -148,9 +148,9 @@
   visibility: hidden;
 }
 
-.sticky .nav-bar-open.header {
+/* .sticky .nav-bar-open.header {
   background-color: #383838;
-}
+} */
 
 .nav-bar-open .open {
   display: none;

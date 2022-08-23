@@ -81,31 +81,31 @@ btnMenuCloseEl.addEventListener("click", (event) => {
 
 //////////////////////////////////////////////////////////
 // Make header solid then have opaque again after menu enter / out
-btnMenuOpenEl.addEventListener("click", (event) => {
-  const menuEl = document.querySelector(".nav-bar");
-  const header2El = document.querySelector(".sticky .header");
+// btnMenuOpenEl.addEventListener("click", (event) => {
+//   const menuEl = document.querySelector(".nav-bar");
+//   const header2El = document.querySelector(".sticky .header");
 
-  menuEl.addEventListener("transitionend", (event) => {
-    if (event.propertyName == "opacity") {
-      console.log(event.propertyName);
-      console.log(event.target);
-      header2El.setAttribute(
-        "style",
-        "background-color: rgba(56, 56, 56, 0.9);"
-      );
-    }
-  });
-});
+//   menuEl.addEventListener("transitionend", (event) => {
+//     if (event.propertyName == "opacity") {
+//       console.log(event.propertyName);
+//       console.log(event.target);
+//       header2El.setAttribute(
+//         "style",
+//         "background-color: rgba(56, 56, 56, 0.9);"
+//       );
+//     }
+//   });
+// });
 
-btnMenuCloseEl.addEventListener("click", (event) => {
-  const menu2El = document.querySelector(".nav-bar");
-  const header3El = document.querySelector(".sticky .header");
+// btnMenuCloseEl.addEventListener("click", (event) => {
+//   const menu2El = document.querySelector(".nav-bar");
+//   const header3El = document.querySelector(".sticky .header");
 
-  menu2El.addEventListener("transitionstart", (event) => {
-    if (event.propertyName == "opacity") {
-      console.log("start ", event.propertyName);
-      console.log("start ", event.target);
-      header3El.setAttribute("style", "background-color: #383838;");
-    }
-  });
-});
+//   menu2El.addEventListener("transitionstart", (event) => {
+//     if (event.propertyName == "opacity") {
+//       console.log("start ", event.propertyName);
+//       console.log("start ", event.target);
+//       header3El.setAttribute("style", "background-color: #383838;");
+//     }
+//   });
+// });

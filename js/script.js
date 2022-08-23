@@ -44,10 +44,19 @@ const obs = new IntersectionObserver(
 
     if (!ent.isIntersecting) {
       document.querySelector("body").classList.add("sticky");
+      document.querySelector("body").classList.remove("unsticky");
     }
 
     if (ent.isIntersecting) {
-      document.querySelector("body").classList.remove("sticky");
+      if (document.querySelector("body").classList.contains("sticky")) {
+        document.querySelector("body").classList.add("unsticky");
+        document.querySelector("body").classList.remove("sticky");
+        document
+          .querySelector(".unsticky .header")
+          .addEventListener("animationend", () => {
+            document.querySelector("body").classList.remove("unsticky");
+          });
+      }
       document.querySelector(".header").classList.remove("nav-bar-open");
     }
   },

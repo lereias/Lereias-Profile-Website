@@ -49,7 +49,8 @@ queries! Instead, 1rem = 1em = 16px */
   }
 
   .sticky .content-header-sm {
-    animation: collapseInHeaderSmall 0.7s cubic-bezier(0.4, 0.22, 0.41, 1.02);
+    height: 100px;
+    animation: collapseInHeaderSmall 1s cubic-bezier(1, 0, 0, 1);
   }
 
   @keyframes collapseInHeaderSmall {
@@ -58,8 +59,25 @@ queries! Instead, 1rem = 1em = 16px */
       height: 0;
     }
     100% {
+      top: 0;
       transform: translateY(0);
       height: 100px;
+    }
+  }
+
+  .unsticky .content-header-sm {
+    height: 0;
+    animation: collapseOutHeaderSmall 0.7s cubic-bezier(1, 0, 0, 1);
+  }
+
+  @keyframes collapseHeaderSmall {
+    0% {
+      transform: translateY(0%);
+      height: 100px;
+    }
+    100% {
+      transform: translateY(-300%);
+      height: 0;
     }
   }
 

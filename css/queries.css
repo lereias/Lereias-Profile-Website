@@ -35,9 +35,9 @@ queries! Instead, 1rem = 1em = 16px */
     font-size: 43.75%;
   }
 
-  .header {
+  /* .header {
     height: 9vh;
-  }
+  } */
 
   .content-header-sm {
     grid-row: 0;
@@ -46,6 +46,21 @@ queries! Instead, 1rem = 1em = 16px */
     visibility: visible;
 
     width: 86.5%;
+  }
+
+  .sticky .content-header-sm {
+    animation: collapseInHeaderSmall 0.7s cubic-bezier(0.4, 0.22, 0.41, 1.02);
+  }
+
+  @keyframes collapseInHeaderSmall {
+    0% {
+      transform: translateY(-300%);
+      height: 0;
+    }
+    100% {
+      transform: translateY(0);
+      height: 100px;
+    }
   }
 
   .nav-bar {

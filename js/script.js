@@ -48,7 +48,6 @@ const obs = new IntersectionObserver(
 
     if (ent.isIntersecting) {
       document.querySelector("body").classList.remove("sticky");
-      document.querySelector(".header").removeAttribute("style");
       document.querySelector(".header").classList.remove("nav-bar-open");
     }
   },

@@ -44,7 +44,6 @@ const obs = new IntersectionObserver(
 
     if (!ent.isIntersecting) {
       document.querySelector("body").classList.add("sticky");
-      document.querySelector("body").classList.remove("unsticky");
     }
 
     if (ent.isIntersecting) {

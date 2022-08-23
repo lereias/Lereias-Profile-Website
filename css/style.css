@@ -95,11 +95,9 @@
   width: 100%;
   background-color: rgba(56, 56, 56, 0.9);
   /* background-color: #383838; */
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
 }
 
-/* .sticky .header::before {
+.sticky .header::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -109,7 +107,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-} */
+}
 
 /* MOBILE */
 .content-header-sm {
@@ -179,8 +177,6 @@
   pointer-events: auto;
   visibility: visible;
   transform: translate3d(0, 0, -10px);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
 }
 
 /*******************************/

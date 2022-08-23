@@ -171,6 +171,11 @@
   visibility: visible;
 }
 
+.nav-bar-open .links {
+  gap: 4.8rem;
+  transition: gap 0.7s cubic-bezier(1, 0, 0.36, 0.94);
+}
+
 .nav-bar-open .nav-bar {
   opacity: 1;
   height: 91vh;
@@ -499,18 +504,22 @@
 
 .leaves.odd .leaf.odd {
   animation: swapSideRight 2s linear infinite;
+  /* animation: swapSideRight 2s cubic-bezier(0.65, 0.05, 0.36, 1) infinite; */
 }
 
 .leaves.odd .leaf.even {
   animation: swapSideLeft 2s linear infinite;
+  /* animation: swapSideLeft 2s cubic-bezier(0.65, 0.05, 0.36, 1) infinite; */
 }
 
 .leaves.even .leaf.odd {
   animation: swapSideLeft 2s linear infinite;
+  /* animation: swapSideLeft 2s cubic-bezier(0.65, 0.05, 0.36, 1) infinite; */
 }
 
 .leaves.even .leaf.even {
   animation: swapSideRight 2s linear infinite;
+  /* animation: swapSideRight 2s cubic-bezier(0.65, 0.05, 0.36, 1) infinite; */
 }
 
 @keyframes swapSideRight {
@@ -561,7 +570,9 @@
 .explore:hover,
 .explore:active,
 .explore:focus {
-  background-color: #e1c66e;
+  background-color: #383838;
+
+  color: #dec05e;
 }
 
 .explore:focus {
@@ -595,7 +606,7 @@
 
 .row-opinions.one {
   /* transform: translate(-25%, 100%); */
-  animation: row-one 20s linear infinite;
+  animation: row-one 40s linear infinite;
 }
 
 @keyframes row-one {
@@ -609,7 +620,7 @@
 
 .row-opinions.two {
   /* transform: translate(-75%, 205%); */
-  animation: row-two 20s linear infinite;
+  animation: row-two 50s linear infinite;
 }
 
 @keyframes row-two {
@@ -623,7 +634,7 @@
 
 .row-opinions.three {
   /* transform: translate(-25%, 310%); */
-  animation: row-three 20s linear infinite;
+  animation: row-three 40s linear infinite;
 }
 
 @keyframes row-three {

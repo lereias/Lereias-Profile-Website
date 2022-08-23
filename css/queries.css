@@ -76,13 +76,15 @@ queries! Instead, 1rem = 1em = 16px */
     transition: all 0.7s cubic-bezier(0.78, 0.01, 0.25, 0.97);
 
     /* make it invisible */
-    opacity: 0;
+    /* opacity: 0; */
     pointer-events: none;
     visibility: hidden;
   }
 
   .links {
     flex-direction: column;
+    gap: 0;
+    transition: gap 0.7s cubic-bezier(0.36, 0.04, 0.36, 0.94);
   }
 
   .links .for-logo {

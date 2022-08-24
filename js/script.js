@@ -48,15 +48,36 @@ const obs = new IntersectionObserver(
 
     if (ent.isIntersecting) {
       if (document.querySelector("body").classList.contains("sticky")) {
-        document.querySelector("body").classList.add("unsticky");
-        document.querySelector("body").classList.remove("sticky");
-        document
-          .querySelector(".unsticky .header")
-          .addEventListener("animationend", () => {
-            document.querySelector("body").classList.remove("unsticky");
-          });
+        if (
+          document.querySelector(".header").classList.contains("nav-bar-open")
+        ) {
+          // document.querySelector(".header").classList.remove("nav-bar-open");
+          // document
+          //   .querySelector(".sticky .nav-bar")
+          //   .addEventListener("transitionend", (event) => {
+          //     //console.log(event.propertyName);
+          //     if (event.propertyName == "height") {
+          //       //console.log("hello");
+          //       document.querySelector("body").classList.add("unsticky");
+          //       document.querySelector("body").classList.remove("sticky");
+          //       document
+          //         .querySelector(".unsticky .header")
+          //         .addEventListener("animationend", () => {
+          //           document.querySelector("body").classList.remove("unsticky");
+          //         });
+          //     }
+          //   });
+        } else {
+          document.querySelector("body").classList.add("unsticky");
+          document.querySelector("body").classList.remove("sticky");
+
+          document
+            .querySelector(".unsticky .header")
+            .addEventListener("animationend", () => {
+              document.querySelector("body").classList.remove("unsticky");
+            });
+        }
       }
-      document.querySelector(".header").classList.remove("nav-bar-open");
     }
   },
   {

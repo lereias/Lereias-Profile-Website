@@ -35,12 +35,16 @@ queries! Instead, 1rem = 1em = 16px */
     font-size: 43.75%;
   }
 
-  /* .header {
-    height: 9vh;
-  } */
+  .sticky .nav-bar {
+    animation: none;
+  }
+
+  .unsticky .nav-bar {
+    animation: none;
+  }
 
   .content-header-sm {
-    grid-row: 0;
+    grid-row: 1;
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
@@ -49,8 +53,9 @@ queries! Instead, 1rem = 1em = 16px */
   }
 
   .sticky .content-header-sm {
+    /* transform: translateY(-300%); */
     height: 100px;
-    animation: collapseInHeaderSmall 1s cubic-bezier(1, 0, 0, 1);
+    animation: collapseInHeaderSmall 0.7s cubic-bezier(1, 0, 0, 1);
   }
 
   @keyframes collapseInHeaderSmall {
@@ -59,7 +64,6 @@ queries! Instead, 1rem = 1em = 16px */
       height: 0;
     }
     100% {
-      top: 0;
       transform: translateY(0);
       height: 100px;
     }
@@ -67,12 +71,15 @@ queries! Instead, 1rem = 1em = 16px */
 
   .unsticky .content-header-sm {
     height: 0;
+    display: flex;
+    align-items: center;
     animation: collapseOutHeaderSmall 0.7s cubic-bezier(1, 0, 0, 1);
+    /* animation: collapseOutHeaderSmall 0.7s ease-out; */
   }
 
-  @keyframes collapseHeaderSmall {
+  @keyframes collapseOutHeaderSmall {
     0% {
-      transform: translateY(0%);
+      transform: translateY(0);
       height: 100px;
     }
     100% {
@@ -83,7 +90,7 @@ queries! Instead, 1rem = 1em = 16px */
 
   .nav-bar {
     position: absolute;
-    top: 9vh;
+    top: 100px;
     left: 0;
     width: 100%;
 
